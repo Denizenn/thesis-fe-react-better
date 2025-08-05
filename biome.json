@@ -16,10 +16,12 @@
       "!bts.jsonc",
       "!**/.expo",
       "!**/.wrangler",
-      "!**/.source"
+      "!**/.source",
+      "!**/tsconfig.json",
+      "!**/tsconfig.*.json",
+      "!**/__root.tsx",
+      "!**/index.css"
     ]
   },
-  "extends": [
-    "ultracite"
-  ]
+  "extends": ["ultracite"]
 }

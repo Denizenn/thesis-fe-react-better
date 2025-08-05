@@ -1,10 +1,7 @@
-import { Link } from "@tanstack/react-router";
-
+import { Link } from '@tanstack/react-router';
 
 export default function Header() {
-  const links = [
-    { to: "/", label: "Home" },
-  ];
+  const links = [{ to: '/', label: 'Home' }];
 
   return (
     <div>
@@ -12,17 +9,13 @@ export default function Header() {
         <nav className="flex gap-4 text-lg">
           {links.map(({ to, label }) => {
             return (
-              <Link
-                key={to}
-                to={to}
-              >
+              <Link key={to} to={to}>
                 {label}
               </Link>
             );
           })}
         </nav>
-        <div className="flex items-center gap-2">
-        </div>
+        <div className="flex items-center gap-2" />
       </div>
       <hr />
     </div>
