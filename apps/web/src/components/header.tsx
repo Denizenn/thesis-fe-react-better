@@ -1,7 +1,13 @@
 import { Link } from '@tanstack/react-router';
 
 export default function Header() {
-  const links = [{ to: '/', label: 'Home' }];
+  const links = [
+    { to: '/', label: 'Home' },
+    { to: '/about', label: 'About' },
+    { to: '/blog', label: 'Blog' },
+    { to: '/dashboard', label: 'Dashboard' },
+    { to: '/users/123', label: 'User Profile' },
+  ];
 
   return (
     <div>
